@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259611133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 2.88, z: 0}
+  m_LocalPosition: {x: 2.42, y: 0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161044879}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.06, y: -0.97, z: 0}
+  m_LocalPosition: {x: -1.08, y: -2.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -678,7 +678,6 @@ GameObject:
   - component: {fileID: 1329724696}
   - component: {fileID: 1329724695}
   - component: {fileID: 1329724697}
-  - component: {fileID: 1329724698}
   - component: {fileID: 1329724699}
   m_Layer: 0
   m_Name: joint0
@@ -747,7 +746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329724694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.64, y: -4.33, z: 0}
+  m_LocalPosition: {x: -5.18, y: -4.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -766,31 +765,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414980698d40a4041803342994374a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joint0: {fileID: 1329724696}
-  joint1: {fileID: 1161044881}
-  joint2: {fileID: 259611135}
+  Joint0: {fileID: 1329724696}
+  Joint1: {fileID: 1161044881}
+  Joint2: {fileID: 259611135}
   endEffector: {fileID: 2082586252}
   target: {fileID: 126201616}
-  alpha: 0.01
+  alpha: 0.0001
+  joint1Limits: {x: -0.7853982, y: 0.7853982}
+  joint2Limits: {x: -1.5707964, y: 1.5707964}
+  joint3Limits: {x: -2.3561945, y: 2.3561945}
   lineRenderer1: {fileID: 1329724699}
   lineRenderer2: {fileID: 1161044882}
   lineRenderer3: {fileID: 259611136}
---- !u!114 &1329724698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329724694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64de1dc85d2da57489bf1f8abfbc9652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joints: []
-  endEffector: {fileID: 0}
-  target: {fileID: 0}
-  alpha: 0.001
 --- !u!120 &1329724699
 LineRenderer:
   serializedVersion: 2
@@ -1064,7 +1050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082586250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.44, y: 0.67, z: 0}
+  m_LocalPosition: {x: 6.33, y: 3.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
